@@ -27,7 +27,7 @@ public:
     size_t score = 0;
     std::string text = "SCORE: ";
     sf::Text textScore;
-    sf::Sound explosionSound, loseSound;
+    sf::Sound explosionSound, loseSound, victorySound;
 
     sf::Music music;
 

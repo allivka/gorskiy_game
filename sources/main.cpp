@@ -20,10 +20,10 @@ int main() {
     sf::Font font;
     font.loadFromFile("font/font.ttf");
 
-    sf::SoundBuffer explosionBuff, loseBuff;
+    sf::SoundBuffer explosionBuff, loseBuff, victoryBuff;
     explosionBuff.loadFromFile("audio/explosion.wav");
     loseBuff.loadFromFile("audio/lose.wav");
-
+    victoryBuff.loadFromFile("audio/victory.wav");
 
     sf::Sprite backGround(tBackGround), gameOver(tGameOver), victory(tVictory);
 
@@ -32,6 +32,7 @@ int main() {
         Game game(tPlayer, tEnemy, tBullet, font);
         game.explosionSound.setBuffer(explosionBuff);
         game.loseSound.setBuffer(loseBuff);
+        game.victorySound.setBuffer(victoryBuff);
         game.music.openFromFile("audio/music.wav");
         game.music.play();
         game.music.setVolume(45);

@@ -112,6 +112,7 @@ void Game::stateTick() {
 
         if(enemies.empty()) {
             isVictory = true;
+            victorySound.play();
             return;
         }
 
