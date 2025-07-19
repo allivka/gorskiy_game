@@ -1,6 +1,6 @@
 # gorskiy_game
 
-Simple game about gorskiy.
+Simple game about Gorskiy Mihail Genadevich.
 
 To successfuly build for linux via makefile you need g++ compiler, 
 make and sfml library installed on your machine .
